@@ -1,0 +1,60 @@
+async-generator==1.10
+attrs==22.2.0
+beautifulsoup4==4.12.2
+certifi==2022.12.7
+charset-normalizer==3.1.0
+exceptiongroup==1.1.1
+h11==0.14.0
+idna==3.4
+numpy==1.24.2
+outcome==1.2.0
+packaging==23.0
+pandas==2.0.0
+PySocks==1.7.1
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+pytz==2023.3
+requests==2.28.2
+selenium==4.8.3
+six==1.16.0
+sniffio==1.3.0
+sortedcontainers==2.4.0
+soupsieve==2.4
+tqdm==4.65.0
+trio==0.22.0
+trio-websocket==0.10.2
+tzdata==2023.3
+urllib3==1.26.15
+webdriver-manager==3.8.5
+wsproto==1.2.0
+python==3.8.8
+
+
+Find instruction of running code below:-
+
+Step1:- Open PyCharm and create a new project or open an existing one that contains the Scrapping.py file.
+
+Step2:- In the PyCharm terminal, install the required packages you can find below how to install packages.
+
+    1) Open project that contain Scrapping.py file.
+    2) Now go to File → settings → project → python interpreter.(This path for windows)
+    2) Now go to pycharm → Preferences → python interpreter.(This path for macOS)
+    3) Now click on the “+” symbol on the left bottom corner. Search for the package name one by one  that I mention below and press install package button.
+    beautifulsoup4 ,pandas ,selenium ,webdriver-manager
+
+Step3:- Click the green Run button in the PyCharm toolbar.
+
+Step4:- Wait for the script to complete execution. It will perform the steps one by one. During this execution chrome browser will automatically open and close in order to scrape the data from website pages and it will take some time. It will perform the following steps:
+
+    1) Fetch all the pages specified by absoluteUrl and relativeUrl using the fetchAllPages() function and save them in the outputDir directory.
+    2) Extract product details from the pages using the extractContentFromPages() function and save them in a pandas DataFrame called prdDetails.
+    3) Generate a CSV file containing the product details using the generateProductDetails() function and save it in the Output/ directory.
+    4) Read the product details CSV file using the pandas read_csv() function and save it in a DataFrame called df.
+    5) Fetch all the product information from the product URLs in df using the fetchAllProductInformation() function and save them in the outputDir directory.
+    6) Extract product information from the pages using the extractProductInformation() function and save them in a list called productInfos.
+    7) Generate a CSV file containing the product information using the generateProductInformationFile() function and save it in the outputDir directory.
+
+Step5:- Once the script has completed execution, you can find the product details and product information CSV files in the Output/ directory. 
+
+
+
