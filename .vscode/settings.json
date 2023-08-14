@@ -1,0 +1,4 @@
+{
+    "git-graph.repository.commits.fetchAvatars": true,
+    "git-graph.repository.useMailmap": false
+}
